@@ -1,6 +1,6 @@
 variable "name_prefix" {
   type = string
-  default = "terraform-lc-example-124"
+  default = "terraform-lc-example1"
 }
 variable "image_id" {
   type = string
@@ -12,7 +12,7 @@ variable "instance_type" {
 }
 variable "name" {
   type = string
-  default = "terraform-asg-exampless"
+  default = "terraform-asg-1"
 }
 variable "availability_zones" {
   type = list(string)
@@ -20,7 +20,7 @@ variable "availability_zones" {
 }
 variable "name_lb" {
   type = string
-  default = "test-lb-tf"
+  default = "test-lb-tfc"
 }
 
 variable "security_groups" {

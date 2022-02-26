@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-2"
 }
 resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
+  name        = "allow_tls11"
   description = "Allow TLS inbound traffic"
   vpc_id      = "vpc-0f607673eab7d2eb7"
   ingress {
@@ -31,8 +31,8 @@ resource "aws_db_instance" "default" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  name                 = "myrdsnew"
-  identifier           = "myrdsnew"
+  name                 = "myrdsnewone"
+  identifier           = "myrdsnewone"
   username             = "admin"
   password             = "Ramrebel56"
   parameter_group_name = "default.mysql5.7"
